@@ -1,36 +1,12 @@
-"""
-Lightweight LLM client abstractions used across the project.
-
-Supported providers:
-- OpenAI-compatible APIs (incl. Azure, local OpenAI-compatible gateways)
-- Ollama (local)
-
-Environment variables:
-- PROVIDER: "openai" or "ollama" (defaults to "openai")
-- OPENAI_API_KEY: required for openai provider
-- OPENAI_BASE_URL: optional override (e.g., http://localhost:8000/v1)
-- OLLAMA_BASE_URL: optional override (default http://localhost:11434)
-
-Usage:
-    from llm_clients import client_from_env
-    llm = client_from_env(model="gpt-4o-mini")
-    response = llm.generate("Hello?")
-"""
 from __future__ import annotations
-
 import os
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
-
 import requests
 
-
 class LLMClient:
-    """Abstract base for LLM providers."""
-
-    def generate(self, prompt: str, **kwargs: Any) -> str:  # pragma: no cover - interface
+    def generate(self, prompt: str, **kwargs: Any) -> str:
         raise NotImplementedError
-
 
 @dataclass
 class OpenAIClient(LLMClient):
@@ -54,11 +30,10 @@ class OpenAIClient(LLMClient):
         )
         return resp.choices[0].message.content.strip()
 
-
 @dataclass
 class OllamaClient(LLMClient):
     model: str
-    base_url: str = "http://localhost:11434"
+    base_url: str = os.getenv("OLLAMA_BASE_URL")
 
     def generate(self, prompt: str, **kwargs: Any) -> str:
         temperature = kwargs.get("temperature", 0.2)
@@ -74,16 +49,14 @@ class OllamaClient(LLMClient):
         )
         resp.raise_for_status()
         data = resp.json()
-        # Ollama may return a 'message' dict or a 'choices' list depending on version.
+        
         if "message" in data:
             return data["message"]["content"].strip()
         if "choices" in data:
             return data["choices"][0]["message"]["content"].strip()
         raise ValueError(f"Unexpected Ollama response shape: {data}")
 
-
 def client_from_env(model: str, provider: Optional[str] = None) -> LLMClient:
-    """Return an LLM client based on environment variables."""
     selected = (provider or os.getenv("PROVIDER") or "ollama").lower()
     if selected == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
@@ -92,16 +65,14 @@ def client_from_env(model: str, provider: Optional[str] = None) -> LLMClient:
         base_url = os.getenv("OPENAI_BASE_URL")
         return OpenAIClient(model=model, api_key=api_key, base_url=base_url)
     if selected == "ollama":
-        base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+        base_url = os.getenv("OLLAMA_BASE_URL")
         return OllamaClient(model=model, base_url=base_url)
     raise ValueError(f"Unsupported provider: {selected}")
 
-
 def safe_generate(client: LLMClient, prompt: str, **kwargs: Any) -> str:
-    """Best-effort generation that surfaces concise errors."""
     try:
         return client.generate(prompt, **kwargs)
-    except Exception as exc:  # pragma: no cover - pass-through
+    except Exception as exc:
         raise RuntimeError(f"LLM generation failed: {exc}") from exc
 
 
