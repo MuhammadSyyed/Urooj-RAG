@@ -1,0 +1,1152 @@
+{
+    "qa_id": "Bancassurance Presentation::qa::0",
+    "question": "What does the Bancassurance distribution model involve in the document?",
+    "reference": "The document describes a Bancassurance distribution model where the Bank (HBL) generates leads and passes them to insurance companies (JLI) through the Bank's distribution network. The Bank only generates leads, and the insurer is responsible for converting those leads into sales.",
+    "candidate": "The Bancassurance distribution model involves the Bank (HBL) generating leads and passing them to an insurer (JLI) to sell insurance products through the Bank’s distribution network.",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::1",
+    "question": "What are the key features of the Tabeer - BUILD FUTURES feature?",
+    "reference": "The Tabeer - BUILD FUTURES feature is a unit-linked endowment plan with long and medium-term investment options, offering coverage for education, marriage, and child insurance.",
+    "candidate": "Tabeer – BUILD FUTURES features include:\n\n*   Unit-linked endowment plan\n*   Long & Medium term Investment Plus Coverage\n*   Education or Marriage of the child insured\n*   Eligibility All HBL Deposit customers between 18-55 years\n*   Tenure 10 – 57 years (Maximum Maturity Age 75 years)\n*   Premium PKR 24,000 pa (2,000 per month)\n*   Premium Payment annually, semi-annually, quarterly, and monthly\n*   Auto-Recovery from HBL Account Death Benefit Sum Assured or Cash Value\n*   Maturity Benefit Cash Value of Policy\n*   Supplementary Benefits or Riders\n*   Family Income Benefit\n*   Accidental Death Benefit\n*   Waiver of Premium\n*   Accidental Death for Nominated Daughter AMAAN – RETIRE TO A CAREFREE LIFE",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::2",
+    "question": "What is the premium for the TABEER - BUILD FUTURES plan?",
+    "reference": "The premium for the TABEER - BUILD FUTURES plan is PKR 24,000 pa (2,000 per month).",
+    "candidate": "PKR 24,000 pa (2,000 per month)",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::3",
+    "question": "What is the tenure for the TABEER - BUILD FUTURES plan?",
+    "reference": "The plan has a tenure of 10 - 57 years.",
+    "candidate": "10 – 57 years",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::4",
+    "question": "What is the premium for the TABEER - BUILD FUTURES plan?",
+    "reference": "The premium for the TABEER - BUILD FUTURES plan is PKR 18,000 pa (1,500 per month).",
+    "candidate": "PKR 24,000 pa (2,000 per month)",
+    "score": 2,
+    "reason": "{\n  \"score\": 2,\n  \"reason\": \"The model incorrectly states the premium is PKR 24,000 pa instead of the stated PKR 18,000 pa. It also fails to include a brief analysis of the discrepancy.\"\n}"
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::5",
+    "question": "What is the annual premium for the Hawwa - A WOMEN PLAN?",
+    "reference": "The annual premium for the Hawwa - A WOMEN PLAN is PKR 18,000 pa (1,500 per month).",
+    "candidate": "PKR 18,000 pa (1,500 per month)",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The model accurately extracts the annual premium amount from the reference answer. It presents the information in the requested format.\"\n}"
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::6",
+    "question": "What is the key difference between the Hawwa - A WOMEN PLAN and the Samar - FOR A BETTER FUTURE?",
+    "reference": "The Hawwa - A WOMEN PLAN is a unit-linked endowment plan, while the Samar - FOR A BETTER FUTURE is a unit-linked endowment plan with a whole-of-life focus, offering a longer term investment and a higher sum assured.",
+    "candidate": "The Hawwa – A WOMEN PLAN is a unit-linked endowment plan, while the Samar – FOR A BETTER FUTURE is a protection based benefit plan.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::7",
+    "question": "What is the maximum sum assured in the Shandur - COMMITMENT FOR DREAMS plan?",
+    "reference": "The maximum sum assured in the Shandur - COMMITMENT FOR DREAMS plan is Rs. 1,000,000/- (Annual premium of Rs. 200,000/-).",
+    "candidate": "10750000",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "Bancassurance Presentation::qa::8",
+    "question": "What is the annual premium for the Shandur - COMMITMENT FOR DREAMS plan?",
+    "reference": "The annual premium for the Shandur - COMMITMENT FOR DREAMS plan is PKR 1,000,000 pa (500,000 semi-annual).",
+    "candidate": "10 – 57 years (Maximum Maturity Age 75 years)",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::0",
+    "question": "What is the minimum balance required for the repayment account?",
+    "reference": "There is no minimum balance requirement for the repayment account. However, to avoid any inconvenience, please ensure sufficient funds are available in the repayment account before the installment due date so that the installment amount can be deducted from the same accordingly.",
+    "candidate": "There is no minimum balance requirement for the repayment account.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::1",
+    "question": "What is the maximum amount I can borrow for a CarLoan?",
+    "reference": "The maximum amount you can borrow for a CarLoan is not specified in the document. However, the Co-borrower's income will be clubbed with your income to meet the requirement.",
+    "candidate": "HBL CarLoan allows you to borrow for the car you desire, keeping in mind your budget.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::2",
+    "question": "How do I make monthly installment payments?",
+    "reference": "For your convenience, a non-checking repayment account will be opened in your name so that you can easily deposit your monthly installment in the same through any HBL branch.",
+    "candidate": "The CarLoan repayment account is a non-checking account. You can only deposit your CarLoan monthly installment amount. No other banking transactions can be made from this account.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::3",
+    "question": "Can I use the repayment account for other transactions?",
+    "reference": "The CarLoan repayment account is a non-checking account. In which you can only deposit your CarLoan monthly installment amount. No other banking transactions can be made from this account.",
+    "candidate": "No, the repayment account is a non-checking account and is only for depositing your CarLoan monthly installment amount. No other banking transactions can be made from this account.",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::4",
+    "question": "What are the different cities where CarLoan is available?",
+    "reference": "CarLoan is being offered in the following Cities:  Karachi  Lahore  Islamabad  Faisalabad  Multan  Hyderabad  Sialkot  Sargodha  Sahiwal  Gujrat  Gujranwala  Jhelum  Muzaffarabad  Mirpur A.K  Peshawar  Quetta  Sukkur  Bahawalpur",
+    "candidate": "Islamabad, Rawalpindi, Karachi, Lahore, Hyderabad, Karachi, Karachi, Islamabad, Rawalpindi, Lahore, Karachi, Karachi, Islamabad, Rawalpindi, Lahore, Karachi, Karachi, Islamabad",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::5",
+    "question": "Can I inquire about the status of my repayment account?",
+    "reference": "All HBL CarLoan customers will be enrolled for HBL Phone Banking through which they will be able to inquire about their repayment account status as well as avail other related facilities.",
+    "candidate": "A.K.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::6",
+    "question": "Can I make partial payment for my Car Loan during the tenure?",
+    "reference": "Yes, you can make partial payment during the tenure. However, certain charges will apply. For details please contact HBL Phone Banking at 111-111-425 or Click Here for detailed Schedule of charges",
+    "candidate": "Yes, you can make partial payment during the tenure. However, certain charges will apply.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::7",
+    "question": "Can I repay the loan before the maturity date?",
+    "reference": "Yes, you can settle your car loan before the maturity date. However, certain charges will apply. For details please contact HBL Phone Banking at 111-111-425 or Click Here for detailed Schedule of charges",
+    "candidate": "Yes, you can settle your car loan before the maturity date. However, certain charges will apply. For details please contact HBL Phone Banking at 111-111-425 or Click here for detailed Schedule of charges.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CarLoan FAQs and Honda Alliance::qa::8",
+    "question": "Can the Prepayment penalty be waived?",
+    "reference": "Prepayment Penalty can only be waived if the customer avails another CarLoan during or after the settlement of Current CarLoan within 30 days. HBL - Honda Alliance Highlights:",
+    "candidate": "Prepayment Penalty can only be waived if the customer avails another CarLoan during or after the settlement of Current CarLoan within 30 days.",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "CIP LoungeFacility::qa::0",
+    "question": "What is the purpose of the CIP Lounge Facility?",
+    "reference": "The CIP Lounge Facility is provided by HBL to offer free access to international flights to various airports.",
+    "candidate": "To provide a peaceful haven through a soothing and stress-free environment.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "CIP LoungeFacility::qa::1",
+    "question": "Who is eligible for the CIP Lounge Facility?",
+    "reference": "Platinum and Gold HBL Credit Cardholders are eligible for the CIP Lounge Facility, regardless of travel class or airline.",
+    "candidate": "HBL Platinum & Gold Credit Cardholders.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CIP LoungeFacility::qa::2",
+    "question": "What is the cost associated with the CIP Lounge Facility?",
+    "reference": "The CIP Lounge Facility is free for HBL Platinum & Gold Credit Cardholders.",
+    "candidate": "$27 per guest, per visit.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CIP LoungeFacility::qa::3",
+    "question": "What services are offered through the CIP Lounge Facility?",
+    "reference": "The CIP Lounge Facility provides a peaceful environment and includes other quality services for convenience.",
+    "candidate": "The CIP Lounge Facility offers a soothing and stress-free environment and other quality services for convenience.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "CIP LoungeFacility::qa::4",
+    "question": "What is the role of HBL in the CIP Lounge Facility?",
+    "reference": "HBL provides the CIP Lounge Facility as a third-party service, offering complimentary access to international flights.",
+    "candidate": "HBL provides a peaceful haven through its free CIP Lounge Facility.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::0",
+    "question": "What are the benefits of using a HBL Platinum CreditCard?",
+    "reference": "HBL Platinum CreditCard gives you complimentary airport lounge access worldwide with Visa LoungeKey at select destinations, ensuring a serene and luxurious travelling experience.",
+    "candidate": "The provided context does not mention the benefits of a HBL Platinum CreditCard.",
+    "score": 1,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::1",
+    "question": "How does the HBL Platinum CreditCard enhance the travel experience?",
+    "reference": "It provides complimentary airport lounge access regardless of class of ticket or airline, ensuring a serene and luxurious travelling experience.",
+    "candidate": "Enjoy free access to select airport lounges worldwide with your HBL Platinum CreditCard!",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::2",
+    "question": "What is the process for accessing LoungeKey access?",
+    "reference": "You can register for LoungeKey access by visiting www.loungekey.com/visaplatinummena or downloading the mobile app.",
+    "candidate": "Cardholders will need to mention “Lounge Key” to reception staff in order to avail the facility.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::3",
+    "question": "What are the requirements for accessing the LoungeKey?",
+    "reference": "Cardholders must mention ‘Lounge Key' to reception staff in order to avail the facility.",
+    "candidate": "Cardholders will need to mention “Lounge Key” to reception staff in order to avail the facility.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::4",
+    "question": "Are there any restrictions on the benefits of the LoungeKey?",
+    "reference": "The benefit of access to the Lounge is free for valid/active HBL Visa Platinum Credit Cardholders and their Supplementary Cardholders only. Guests are not eligible for complimentary airport lounge access.",
+    "candidate": "Yes, there are restrictions. Cardholders will be charged at $27 per guest, per visit, and participating lounges and facilities are subject to change anytime as per Visa policy.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Complimentary Airport Lounge Access::qa::5",
+    "question": "What is the cost for additional visits?",
+    "reference": "Entry for guests is subject to rules and regulations of the respective lounge and may vary from lounge to lounge.  It's charged at $27 per guest, per visit.",
+    "candidate": "Rs. 1,200/- per guest, per visit.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::0",
+    "question": "What is the maximum financing amount available for a new locally manufactured passenger vehicle?",
+    "reference": "The maximum financing amount available is Rs. 3,000,000.",
+    "candidate": "Rs. 3,000,000",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::1",
+    "question": "What is the minimum required monthly income for a customer to qualify for the HBL CarLoan?",
+    "reference": "The minimum required monthly income is Rs. 200,000.",
+    "candidate": "Rs. 20,000/-",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::2",
+    "question": "What types of vehicles can be financed under HBL CarLoan?",
+    "reference": "HBL CarLoan can be offered for vehicles categorized as ‘Light Commercial Vehicles'.",
+    "candidate": "Any type of car - new, used, local or imported car.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::3",
+    "question": "What is the process for obtaining a loan with HBL CarLoan?",
+    "reference": "The process involves providing a monthly income of at least Rs. 200,000, and the loan amount can be up to Rs. 3,000,000.",
+    "candidate": "For your convenience, a non-checking repayment account will be opened in your name so that you can easily deposit your monthly installment in the same through any HBL branch.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::4",
+    "question": "What is the maximum tenure offered for used cars?",
+    "reference": "The maximum tenure for used cars is 60 months.",
+    "candidate": "60 months",
+    "score": 5,
+    "reason": "{\n  \"score\": 5,\n  \"reason\": \"The model provides the correct answer – 60 months is the maximum tenure offered for used cars. The answer is directly and accurately stated.\"\n}"
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::5",
+    "question": "What is the process for obtaining a loan for a new locally manufactured passenger vehicle?",
+    "reference": "The process involves providing a monthly income of at least Rs. 25,000 and providing documents like application form, CNIC, and passport photos.",
+    "candidate": "The process for obtaining a loan for a new locally manufactured passenger vehicle includes:\n\n1.  Initial information and relationship must be communicated by initiating branch.\n2.  Delivery time of vehicle must never be committed and it must be clarified that the bank has no responsibility in terms of delays in delivery.\n3.  Customer must be informed of the process and that the application may be subject to:\n    *   Telephonic verification\n    *   Physical Verification\n    *   Credit History Check\n    *   Contacting references\n4.  Customer must be intimated that the vehicle is delivered 2nd day after arrival at dealership as the tracker installation/insurance formalities have to be completed.\n5.  All charges must be communicated to the customer including.\n6.  The product is offered for fixed tenures of 12, 24, 36, 48, 60,72 and 84 months providing flexibility to the customer to manage personal expenses.\n7.  Maximum tenure for used cars and new cars less than 1000 cc is 60 months.\n8.  Unique Proposition: Early Settlement: The customer (if unwilling to)",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::6",
+    "question": "What is the process for obtaining a loan for a business-related vehicle?",
+    "reference": "The process involves providing details of the business, including occupation, source of income, and documents like application form, CNIC, and passport photos.",
+    "candidate": "The process for obtaining a loan for a business-related vehicle involves the following:\n\n1.  Initiating branch to reflect on the applicant’s profile.\n2.  Delivery time of vehicle must never be committed and it must be clarified that the bank has no responsibility in terms of delays in delivery.\n3.  Customer must be informed of the process and that the application may be subject to:\n    *   Telephonic verification\n    *   Physical Verification\n    *   Credit History Check\n    *   Contacting references\n4.  Customer must be intimated that the vehicle is delivered 2nd day after arrival at dealership as the tracker installation/insurance formalities have to be completed.\n5.  All charges must be communicated to the customer including.\n6.  The vehicle is delivered 2nd day after arrival at dealership as the tracker installation/insurance formalities have to be completed.\n7.  Termination after delivery of vehicle, @ 5% of outstanding amount at the time of settlement.\n8.  Partial Payment prior to delivery of vehicle, @ 10% of amount being settled.\n9.  Partial Payment delivery of vehicle, @ 5% of amount being settled.\n10. Actual Cost. Rs.1,000/- per late payment\n11. Verification - Actual Upto Rs. 150/-\n12. 10% of Principal settled\n13. 5% after 50% of Tenure has passed\n14. 10% of Principal settled\n15. Rs. 10,000/-\n16. Property Insurance Premium borne by the Bank\n17. Actual to be borne by the Customer\n18. Partial Payment not allowed\n19. Rs.800/- per late payment\n20. Part H CONSUMER FINANCES\n21. Rs.7,500/-\n22. Rs.3,750/- (For individuals applying again after 6 months or maturity of one facility or Settlement after minimum 6 months)",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::7",
+    "question": "What is the process for obtaining a loan for a self-employed business?",
+    "reference": "The process involves providing details of the business, including occupation, source of income, and documents like application form, CNIC, and passport photos.",
+    "candidate": "To obtain a loan for a self-employed business, the following requirements are necessary:\n\n*   Application Form\n*   Copy of CNIC\n*   2 Recent Passport Size Photos\n*   Signed-off Calculation Sheet/SOBC\n*   Letter From Branch\n*   Direct Debit Authority\n*   Application Form\n*   Copy of CNIC\n*   2 Recent Passport Size Photos\n*   Signed-off Calculation Sheet/SOBC",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::8",
+    "question": "What is the process for obtaining a loan for a self-employed business-person?",
+    "reference": "The process involves providing details of the business, including occupation, source of income, and documents like application form, CNIC, and passport photos.",
+    "candidate": "Requirements:\n*   Application Form\n*   Copy of CNIC\n*   2 Recent Passport Size Photos\n*   Signed-off Calculation Sheet/SOBC\n*   Latest Salary Slip\n*   Direct Debit Authority\n*   Application Form\n*   Copy of CNIC\n*   2 Recent Passport Size Photos\n*   Signed-off Calculation Sheet/SOBC\n*   Latest Salary Slip\n*   Direct Debit Authority Age\n*   Minimum 22 (at the time of application)\n*   Maximum 70 (at maturity of facility)\n*   Minimum 22 (at the time of application)\n*   Maximum 60 (at maturity of facility)\n*    New-To-Bank (Self-employed Businesspersons-SEB/Professionals-SEP)\n*   Particulars Requirements Status\n*   SEB: Proprietor, Partner, Director of Pvt./Public Ltd. Company\n*   SEP: Architects, Engineers, Doctors, Accountants (registered with respective professional body)\n*   Age\n*   Min 22 (at the time of application), Max 70 (at maturity of facility)\n*   Minimum 22 (at the time of application)\n*   Maximum 60 (at maturity of facility)\n*   Monthly Income Rs. 25,000/-\n*   Length of Business Minimum 12 months\n*   Documents: Application Form, Copy of CNIC, 2 Recent Passport Size Photos, Signed-off Calculation Sheet/SOBC, Latest Salary Slip, Direct Debit Authority, Application Form, Copy of CNIC, 2 Recent Passport Size Photos, Signed-off Calculation Sheet/SOBC, Latest Salary Slip, Direct Debit Authority Age, Minimum 22 (at the time of application), Maximum 70 (at maturity of facility), Minimum 22 (at the time of application), Maximum 60 (at maturity of facility)\n*    0.50% per Quarter 0.40% per Quarter Charges",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::9",
+    "question": "What is the process for obtaining a loan for a salaried individual?",
+    "reference": "The process involves providing details of the occupation, source of income, and documents like application form, CNIC, and passport photos.",
+    "candidate": "If you are a salaried or self-employed business person/professional having a regular, stable and verifiable income stream, you can apply for HBL CarLoan.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL CarLoan - Training- after induction of Regions::qa::10",
+    "question": "What is the process for obtaining a loan for a self-employed business-person-professional?",
+    "reference": "The process involves providing details of the business, including occupation, source of income, and documents like application form, CNIC, and passport photos.",
+    "candidate": "Documents: Application Form, Copy of CNIC, 2 Recent Passport Size Photos, Signed-off Calculation Sheet/SOBC, Letter From Branch, Direct Debit Authority, Application Form, Copy of CNIC, 2 Recent Passport Size Photos, Signed-off Calculation Sheet/SOBC, Latest Salary Slip, Direct Debit Authority, Age, Minimum 22 (at the time of application), Maximum 70 (at maturity of facility), Minimum 22 (at the time of application), Maximum 60 (at maturity of facility).",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::0",
+    "question": "What is the maximum spending limit for the HBL Gold DebitCard?",
+    "reference": "The maximum spending limit for the HBL Gold DebitCard is PKR 100,000.",
+    "candidate": "Higher Spending Limits",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::1",
+    "question": "Where can I find the HBL Gold DebitCard discounts?",
+    "reference": "You can find exciting discounts at over 150 alliance partners nationwide at dining, travelling and shopping outlets.",
+    "candidate": "www.hbl.com/hblcarddiscounts",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::2",
+    "question": "What is the purpose of 3D Secure?",
+    "reference": "3D Secure provides enhanced protection along with international acceptance and convenience.",
+    "candidate": "3D Secure is designed to ensure safe online transactions every time.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::3",
+    "question": "What is the activation code for the HBL Gold DebitCard?",
+    "reference": "The activation code for the HBL Gold DebitCard is X X X X X.",
+    "candidate": "X X X X X",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::4",
+    "question": "How long does the activation code valid for?",
+    "reference": "The activation code is valid for 3 days only.",
+    "candidate": "3 days.",
+    "score": 5,
+    "reason": "{\n  \"score\": 5,\n  \"reason\": \"The model's answer directly and accurately reflects the information provided in the reference answer. It provides the exact time duration specified.\"\n}"
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::5",
+    "question": "What should I do if my activation code expires?",
+    "reference": "Please repeat Step 1.",
+    "candidate": "Repeat Step 1.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::6",
+    "question": "What is the maximum amount I can withdraw with my HBL Gold DebitCard?",
+    "reference": "You can withdraw up to PKR 250,000.",
+    "candidate": "PKR 250,000",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::7",
+    "question": "What is the benefit of using HBL Gold DebitCard for e-Commerce?",
+    "reference": "You can enjoy exclusive discounts and privileges at over 150 alliance partners nationwide.",
+    "candidate": "Allows you to enjoy exclusive discounts and privileges at over 150 alliance partners nationwide with great discounts of up to 25%.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::8",
+    "question": "What is the purpose of SMS Alerts?",
+    "reference": "SMS Alerts Facility allows you to receive instant SMS notifications for every transaction conducted on your account.",
+    "candidate": "Following the information provided, the purpose of SMS Alerts is to be recovered as per Part 'P' as applicable.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "HBL Gold DC Welcome Guide 20June18::qa::9",
+    "question": "What is the required action to activate the HBL Gold DebitCard?",
+    "reference": "You need to register for HBL MobileBanking, PhoneBanking and InternetBanking to avail the following facilities.",
+    "candidate": "Contact HBL PhoneBanking at 111-111-425.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::0",
+    "question": "What is the minimum amount per LC for a bill exceeding Rs. 25 million?",
+    "reference": "The minimum amount per LC for a bill exceeding Rs. 25 million is Rs. 2,200/-",
+    "candidate": "912315",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::1",
+    "question": "What is the rate per quarter for the first quarter of a L/C opened under 'Supplier Credit'?",
+    "reference": "The rate per quarter for the first quarter of a L/C opened under 'Supplier Credit' is 0.40%.",
+    "candidate": "0.40%",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::2",
+    "question": "What is the rate per quarter for the second quarter of a L/C opened under 'Pay As You Earn Scheme'?",
+    "reference": "The rate per quarter for the second quarter of a L/C opened under 'Pay As You Earn Scheme' is 0.25%.",
+    "candidate": "0.40%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::3",
+    "question": "What is the rate per quarter for the third quarter of a L/C opened under 'Deferred Payment'?",
+    "reference": "The rate per quarter for the third quarter of a L/C opened under 'Deferred Payment' is 0.20%.",
+    "candidate": "0.20% per quarter or part thereof.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::4",
+    "question": "What is the rate per quarter for the fourth quarter of a L/C opened under 'Car Ijarah'?",
+    "reference": "The rate per quarter for the fourth quarter of a L/C opened under 'Car Ijarah' is 0.20%.",
+    "candidate": "0.40% per quarter or part thereof.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::5",
+    "question": "What is the rate per quarter for the fifth quarter of a L/C opened under 'Car Ijarah'?",
+    "reference": "The rate per quarter for the fifth quarter of a L/C opened under 'Car Ijarah' is 0.20%.",
+    "candidate": "0.40%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::6",
+    "question": "What is the rate per quarter for the sixth quarter of a L/C opened under 'Supplier Credit'?",
+    "reference": "The rate per quarter for the sixth quarter of a L/C opened under 'Supplier Credit' is 0.05%.",
+    "candidate": "0.05%",
+    "score": 5,
+    "reason": "{\n  \"score\": 5,\n  \"reason\": \"The answer accurately states the rate per quarter as 0.05% based on the provided reference. It's a direct and precise response to the question.\"\n}"
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::7",
+    "question": "What is the rate per quarter for the seventh quarter of a L/C opened under 'Deferred Payment'?",
+    "reference": "The rate per quarter for the seventh quarter of a L/C opened under 'Deferred Payment' is 0.12%.",
+    "candidate": "0.20% per quarter",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::8",
+    "question": "What is the rate per quarter for the eighth quarter of a L/C opened under 'Barter / Aid & Authorization to Pay'?",
+    "reference": "The rate per quarter for the eighth quarter of a L/C opened under 'Barter / Aid & Authorization to Pay' is 0.12%.",
+    "candidate": "0.40%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::9",
+    "question": "What is the rate per quarter for the ninth quarter of a L/C opened under 'Debit Card'?",
+    "reference": "The rate per quarter for the ninth quarter of a L/C opened under 'Debit Card' is 0.40%.",
+    "candidate": "0.40%",
+    "score": 5,
+    "reason": "{\n  \"score\": 5,\n  \"reason\": \"The answer accurately states the rate per quarter as 0.40% and provides the correct value. The response is complete and directly addresses the question.\"\n}"
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::10",
+    "question": "What is the rate per quarter for the tenth quarter of a L/C opened under 'Alternate Delivery Channels (ADC)'?",
+    "reference": "The rate per quarter for the tenth quarter of a L/C opened under 'Alternate Delivery Channels (ADC)' is 0.40%.",
+    "candidate": "0.40%",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::11",
+    "question": "What is the rate per quarter for the eleventh quarter of a L/C opened under 'ATM Charges'?",
+    "reference": "The rate per quarter for the eleventh quarter of a L/C opened under 'ATM Charges' is 0.40%.",
+    "candidate": "2. 00%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::12",
+    "question": "What is the rate per quarter for the twelfth quarter of a L/C opened under 'Branchless Banking / Konnect by HBL'?",
+    "reference": "The rate per quarter for the twelfth quarter of a L/C opened under 'Branchless Banking / Konnect by HBL' is 0.40%.",
+    "candidate": "0.40%",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::13",
+    "question": "What is the rate per quarter for the thirteenth quarter of a L/C opened under 'Transfer of L/C to New Beneficiary'?",
+    "reference": "The rate per quarter for the thirteenth quarter of a L/C opened under 'Transfer of L/C to New Beneficiary' is 0.40%.",
+    "candidate": "0.40% per quarter or part thereof.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::14",
+    "question": "What is the rate per quarter for the fourteenth quarter of a L/C opened under 'Misys Internal Account'?",
+    "reference": "The rate per quarter for the fourteenth quarter of a L/C opened under 'Misys Internal Account' is 0.40%.",
+    "candidate": "Rs. 2,000/",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "ISLAMIC SCHEDULE OF BANK CHARGES FOR THE PERIOD 01 01 2020 TO 30 06 2020::qa::15",
+    "question": "What is the rate per quarter for the fifteenth quarter of a L/C opened under 'ISLAMIC SCHEDULE OF BANK CHARGES'?",
+    "reference": "The rate per quarter for the fifteenth quarter of a L/C opened under 'ISLAMIC SCHEDULE OF BANK CHARGES' is 0.40%.",
+    "candidate": "0.40%",
+    "score": 5,
+    "reason": "{\n  \"score\": 5,\n  \"reason\": \"The answer accurately states the rate per quarter as 0.40% for the fifteenth quarter of an Islamic LC. It’s a precise and complete response.\"\n}"
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::0",
+    "question": "What are the charges associated with the HBL CarLoan?",
+    "reference": "Bank Charges are in accordance with the Schedule of Bank Charges, as amended from time to time.",
+    "candidate": "HBL CarLoan charges include Application Processing Fee, Early Settlement Charges, Partial Payment Charges, Vehicle Appraisal (if applicable), and Legal Notice Fee.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::1",
+    "question": "How long can I repay my loan?",
+    "reference": "HBL CarLoan makes it easy to purchase your dream car. With up to 7 years to pay off your loan, HBL CarLoan allows you to borrow for the car you desire, keeping in mind your budget.",
+    "candidate": "You can repay your loan within 7 years.",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The answer directly states the repayment timeframe, which is the core of the question. It’s a clear and concise response.\"\n}"
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::2",
+    "question": "What types of cars can I choose?",
+    "reference": "You can choose any type of car - new, used, local or imported car.",
+    "candidate": "New locally manufactured passenger vehicles, New Light Commercial Vehicles, CBUs (Completely Built Units), and Imported Cars (Registered/Unregistered).",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The model provides a comprehensive list of car types, covering new, used, local, imported, and CBUs. This is a good and accurate response to the question.\"\n}"
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::3",
+    "question": "What is the process for receiving financing?",
+    "reference": "You can receive up to 85% of your preferred car's financing for.",
+    "candidate": "The process for receiving financing is as follows:\n\n1.  Verification\n2.  Credit Report\n3.  Actual Upto Rs. 150/-\n4.  10% of Principal settled\n5.  5% after 50% of Tenure has passed\n6.  10% of Principal settled\n7.  5% after 50% of Tenure has passed\n8.  Rs. 1,000/- per late payment\n9.  Partial Payment not allowed\n10. 1.25% of the loan amount whichever is higher\n11. Processing charges Rs.3,500/- or 1.25% of the loan amount whichever is higher\n12. Partial Payment not allowed\n13. 800/- per late payment\n14. Consumer Finances\n15. Legal and other documentation charges in all cases of fund based and non fund based facilities @0.15%.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::4",
+    "question": "What services are available through HBL PhoneBanking?",
+    "reference": "HBL PhoneBanking also allows you to track your repayment/loan account status and avail other value-added services.",
+    "candidate": "HBL PhoneBanking allows for cash withdrawals, fund transfers, inter bank funds transfer, and inter branch funds transfer.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::5",
+    "question": "What are the penalties for early termination?",
+    "reference": "Termination prior to delivery of vehicle @10% of outstanding amount + FED. Termination after delivery of vehicle @5% of outstanding amount + FED.",
+    "candidate": "Prepayment penalty can only be waived if the customer avails another CarLoan during or after the settlement of Current CarLoan within 30 days.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL CarLoan)- July 2019::qa::6",
+    "question": "What is the process for partial payment?",
+    "reference": "Partial Payment prior to delivery of vehicle @10% of amount being settled + FED.",
+    "candidate": "Partial payment prior to delivery of vehicle, @ 10% of outstanding amount at the time of settlement.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::0",
+    "question": "What are the bank charges for the HBL PersonalLoan?",
+    "reference": "The Schedule of Bank Charges for HBL PersonalLoan product is self-explanatory and all efforts have been made to keep it simple and free of any ambiguity. However, if required, further clariﬁcation can be sought by referring queries to HBL Branches or HBL PhoneBanking at 111-111-425.",
+    "candidate": "The schedule of bank charges for the HBL PersonalLoan is self-explanatory and all efforts have been made to keep it simple and free of any ambiguity. However, if required, further clarification can be sought by referring queries to HBL Branches or HBL PhoneBanking at 111-111-425.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::1",
+    "question": "What is the maximum percentage of interest charges?",
+    "reference": "The Bank charges are in accordance with the Schedule of Bank Charges, as amended from time to time. HBL BranchesHBL PhoneBanking 32.99% 29.99% S. No Particular Category Charges FED Applicable Processing Charges (This will include charges related to Data Check, Veriﬁcation and Stamp Duty) 1. 2. 3. 4. 5. Yes Yes Yes Yes Yes",
+    "candidate": "30-36%",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::2",
+    "question": "What is the maximum annualised percentage rate?",
+    "reference": "No No No 29.99% to 32.99% p.a. (Vary as per loan tenure/income)",
+    "candidate": "Rs.40,000/- Flat per annum.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::3",
+    "question": "What are the charges for early settlement?",
+    "reference": "NoLoans through Mobile: 29.99% to 32.99% p.a. Early Settlement Charges @ 5% of outstanding ﬁnance amount",
+    "candidate": "Yes.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::4",
+    "question": "What is the fee for late payments?",
+    "reference": "Rs. 800 + FED per late payment",
+    "candidate": "1,000/- per late payment.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Key Fact Sheet (HBL PersonalLoan)- July 2019::qa::5",
+    "question": "What is the cost of fund for HBL Staff?",
+    "reference": "800FED + 111-111-425",
+    "candidate": "The provided text does not contain the cost of fund for HBL Staff.",
+    "score": 1,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::0",
+    "question": "What is the discount on laboratory tests for out-patients only?",
+    "reference": "10% Discount is applicable on laboratory tests, heart & lungs diagnostic tests and radiology services for out-patients only.",
+    "candidate": "15%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::1",
+    "question": "What is the discount on hotel bookings?",
+    "reference": "5% discount in addition to discounts on hotel bookings of up to 75% at www.agoda.com/hbl",
+    "candidate": "7% discount in addition to discounts on hotel bookings of up to 75%.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::2",
+    "question": "What is the discount on Diamond Jewelry?",
+    "reference": "15% Discount is applicable on Diamond Jewelry (50% discount on Making & Stone of Gold Jewelry)",
+    "candidate": "20%",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::3",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "10% Discount only applicable on Chocolate & Cake",
+    "candidate": "20%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::4",
+    "question": "What is the discount on Restaurant?",
+    "reference": "15% Discount is applicable on restaurants only",
+    "candidate": "31-Dec-19",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::5",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "15% Discount is applicable on Chocolate & Cake",
+    "candidate": "15%",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The answer correctly states the discount is 15% on Chocolate & Cake. It’s a straightforward and accurate response.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::6",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "20% Discount is applicable on Chocolate & Cake",
+    "candidate": "20%",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The answer directly states the discount is 20% for Chocolate & Cake. It’s a clear and concise response.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::7",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "25% Discount is applicable on Chocolate & Cake",
+    "candidate": "20%",
+    "score": 2,
+    "reason": "{\n  \"score\": 2,\n  \"reason\": \"The model incorrectly states a 20% discount instead of the 25% discount. The reference answer clearly indicates a 25% discount.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::8",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "10% Discount is applicable on Chocolate & Cake",
+    "candidate": "20%",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::9",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "15% Discount is applicable on Chocolate & Cake",
+    "candidate": "15%",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The answer correctly states the discount is 15% on Chocolate & Cake. It's a direct and accurate response to the question.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::10",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "20% Discount is applicable on Chocolate & Cake",
+    "candidate": "15%",
+    "score": 2,
+    "reason": "{\n  \"score\": 2,\n  \"reason\": \"The model incorrectly states a 15% discount instead of the 20% discount. The reference answer clearly indicates a 20% discount.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::11",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "20%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::12",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "20%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::13",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "15%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::14",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "15%",
+    "score": 3,
+    "reason": "{\n  \"score\": 3,\n  \"reason\": \"The model provides a percentage discount, which is relevant to the question. However, it doesn't explicitly state the discount amount. It's a bit vague.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::15",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "15%",
+    "score": 3,
+    "reason": "{\n  \"score\": 3,\n  \"reason\": \"The model provides a percentage discount, which is relevant to the question. However, it doesn't explicitly state the discount amount. It's a bit vague.\"\n}"
+}
+{
+    "qa_id": "PB Alliances List - As of 2nd Dec, 2019::qa::16",
+    "question": "What is the discount on Chocolate & Cake?",
+    "reference": "31-Dec-19",
+    "candidate": "20%",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::0",
+    "question": "What is the main focus of Vintage Gallery?",
+    "reference": "Vintage Gallery is a collection of antiquities, focusing on rich history and value.",
+    "candidate": "Vintage Gallery is the largest collection of antiquities in Pakistan.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::1",
+    "question": "What is the expiry date for the HBL Credit & Debit Cards?",
+    "reference": "The HBL Credit & Debit Cards have an expiry date of December 2020.",
+    "candidate": "The HBL Credit & Debit Cards are valid until 05/23.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::2",
+    "question": "Which HBL cards are eligible for a discount?",
+    "reference": "Eligible customers for the HBL Credit & Debit Cards have a 10% discount on Green, Classic, Gold, and Titanium Debit Cards.",
+    "candidate": "HBL Gold Debit Card, HBL Gold DebitCard, HBL Gold DebitCard, HBL Qatar Airways Platinum Card, HBL Qatar Airways Gold Card, HBL Qatar Airways Platinum Card, HBL Qatar Airways Gold Card, HBL Gold Card, HBL Green Card YES, HBL Gold Card, HBL Platinum Card, HBL Platinum Card.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::3",
+    "question": "Where is Vintage Gallery located?",
+    "reference": "Vintage Gallery is located in Karachi, Nishat Commercial Phase 6 DHA Karachi.",
+    "candidate": "Karachi: Nishat Commercial Phase 6 DHA Karachi",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::4",
+    "question": "What is the restaurant's name?",
+    "reference": "The restaurant is named Lal Qila Hyderabad.",
+    "candidate": "Yum Dining Lahore-Islamabad",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::5",
+    "question": "What kind of cuisine does the restaurant serve?",
+    "reference": "The restaurant serves authentic Mughlai, Tandori, Live Bar-B-Que, and Traditional Pakistani cuisines.",
+    "candidate": "The context does not specify the type of cuisine served.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::6",
+    "question": "Where is the restaurant located?",
+    "reference": "The restaurant is located in Hyderabad, Auto Bahn Rd, Hyderabad.",
+    "candidate": "I do not know.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::7",
+    "question": "What is the offer for the burgers?",
+    "reference": "Big Thick Burgerz offers a 15% discount on Platinum and World Debit Cards.",
+    "candidate": "15% Discount is applicable on deals & promotions from Burger King",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::8",
+    "question": "What is the offer for the cakes?",
+    "reference": "The offer is for cakes and bakery items.",
+    "candidate": "The offer for cakes is 15% discount applicable on breakfast only.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training -  Dec 12 2019::qa::9",
+    "question": "What is the offer for the 25th of December?",
+    "reference": "The offer is valid for cakes and bakery items on the 25th of December 2019.",
+    "candidate": "31-Dec-19",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::0",
+    "question": "What types of cards does Serena Hotels offer?",
+    "reference": "Serena Hotels offers HBL Cards with different credit and debit card options, including HBL Platinum, HBL Gold, HBL Titanium, HBL Green, and HBL Classic.",
+    "candidate": "Serena Hotels offers HBL Platinum, HBL Gold, HBL Titanium, HBL Green, and HBL Classic cards.",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::1",
+    "question": "What is the discount percentage for restaurants?",
+    "reference": "The discount percentage for restaurants is 15% for HBL Gold, 10% for HBL Green, and 5% for HBL Classic cards.",
+    "candidate": "15%",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::2",
+    "question": "What is the discount applicable on Maisha Spa?",
+    "reference": "The discount is applicable on Maisha Spa, including retail and membership.",
+    "candidate": "PKR 7,000",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::3",
+    "question": "What is the maximum discount capping for restaurants?",
+    "reference": "The maximum discount capping is PKR 7,000 for Platinum/World Debit Cards, PKR 5,250 for Gold/Titanium Cards, and PKR 3,500 for Green/Classic Cards.",
+    "candidate": "PKR 10,000",
+    "score": 1,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::4",
+    "question": "What is the discount not applicable on?",
+    "reference": "The discount is not applicable on Room Service and Serena Business Complex.",
+    "candidate": "un-stitched fabric",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::5",
+    "question": "What is the discount applicable on payments made through HBL Cards?",
+    "reference": "HBL Cardholders are entitled to discounts in respect to payments made through their HBL Cards.",
+    "candidate": "The discount applicable on payments made through HBL Cards is Rs. 15 per transaction.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "PB Training - Serena Hotels (00000002)::qa::6",
+    "question": "What is HBL's responsibility if there is a complaint?",
+    "reference": "HBL will not be responsible for any complaint or liability whatsoever that arises with respect to services availed at Serena Hotels.",
+    "candidate": "HBL never asks for your PIN over SMS, phone or email. Hence, do not respond to any such request and report the phone number or email ID to HBL PhoneBanking at 111-111-425.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::0",
+    "question": "What is the maximum coverage amount for natural death benefit in the Plan A product?",
+    "reference": "The maximum natural death benefit in Plan A is Rs 125,000.",
+    "candidate": "The maximum coverage amount for natural death benefit is Rs 180 days.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::1",
+    "question": "How often can the participant make free look period requests?",
+    "reference": "The participant can make free look period requests every 30 days.",
+    "candidate": "You can make free look period requests every 30 days.",
+    "score": 4,
+    "reason": "{\n  \"score\": 4,\n  \"reason\": \"The answer accurately reflects the provided information. It directly states the frequency of free look period requests, which is the core of the question.\"\n}"
+}
+{
+    "qa_id": "Sahara::qa::2",
+    "question": "What is the duration of the hospitalization coverage benefit in Plan B?",
+    "reference": "The hospitalization coverage benefit in Plan B is 24 consecutive hours.",
+    "candidate": "B2 Rs 1,360,000",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::3",
+    "question": "What is the benefit for accident coverage in Plan B?",
+    "reference": "The benefit for accident coverage in Plan B is Natural & Accidental Death Benefit.",
+    "candidate": "Hospital Cash Benefit",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::4",
+    "question": "What is the benefit for C-section surgery in Plan C?",
+    "reference": "The benefit for C-section surgery in Plan C is Non-ICU confinement and Daily Hospital Cash Benefit.",
+    "candidate": "For C-section Surgery, the plan offers receipts of C-section expenses and prescriptions issued by doctor and the hospital.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::5",
+    "question": "What is the maximum amount of income benefit offered in Plan B?",
+    "reference": "The income benefit offered in Plan B is Rs 1,360,000.",
+    "candidate": "Rs. 50 M",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::6",
+    "question": "What is the annual contribution option for the Plan A product?",
+    "reference": "The annual contribution option for the Plan A product is Term Takaful.",
+    "candidate": "PKR 24,000 pa (2,000 per month)",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::7",
+    "question": "What is the waiting period for the elimination period in Plan A?",
+    "reference": "The elimination period in Plan A is - for sickness: 30 days - between successive hospitalizations: 30 days - confinement limit per year: 180 days - for accidental benefit: No waiting period.",
+    "candidate": "The context does not provide information about the waiting period for the elimination period in Plan A.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::8",
+    "question": "What is the benefit for the spouse death in Plan B?",
+    "reference": "The benefit for the spouse death in Plan B is Income Benefit.",
+    "candidate": "Rs 3,000 Rs 6,000 Rs 10,000",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::9",
+    "question": "What is the benefit for the child birth in Plan C?",
+    "reference": "The benefit for the child birth in Plan C is Non-ICU confinement and Daily Hospital Cash Benefit.",
+    "candidate": "Sahara Plan C offers a protection based product – Term Takaful or Income benefit for the period of 12 months in case of spouse death whichever occurs earlier bundled with the additional benefit of hospitalization coverage benefit which also covers Caesarean Section Surgery for child birth to Participants at an affordable cost.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::10",
+    "question": "What is the maximum amount of the daily cash benefit in Plan B?",
+    "reference": "The daily cash benefit in Plan B is Rs 4,000.",
+    "candidate": "912236",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::11",
+    "question": "What is the annual contribution option for the Plan C product?",
+    "reference": "The annual contribution option for the Plan C product is Non-ICU confinement and Daily Hospital Cash Benefit.",
+    "candidate": "PKR 250,000 pa (125,000 semi-annual)",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Sahara::qa::12",
+    "question": "What is the maximum amount of the daily cash benefit in Plan C?",
+    "reference": "The daily cash benefit in Plan C is Rs 6,000.",
+    "candidate": "Rs 3,000",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::0",
+    "question": "What are the main charges listed in the document?",
+    "reference": "The document lists various charges including: Federal Excisable Duty, Bank Charges, Import/Export Charges, Foreign Currency Remittances, Bills, Cheques, and other charges on foreign exchange transactions.",
+    "candidate": "Charges for processing the issuance of NOC on the request of customers for creating additional / pari-passu charge/ second charge on their fixed assets for acquiring further project finances from other banks / financial institutions.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::1",
+    "question": "What is the purpose of the document?",
+    "reference": "The document is a detailed breakdown of charges related to banking transactions, specifically focusing on foreign exchange and international transfers.",
+    "candidate": "The document details the charges and procedures for various financial transactions at a bank.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::2",
+    "question": "What is the significance of the 'Effective From' date?",
+    "reference": "The document specifies that the charges apply from July 1, 2019, to December 31, 2019, indicating a specific period for which these charges are in effect.",
+    "candidate": "The context states that the schedule of bank charges is for the period from 01.07.2019 to 31.12.2019.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::3",
+    "question": "What is the format of the document?",
+    "reference": "The document is a structured table of contents with sections covering various aspects of banking charges.",
+    "candidate": "I do not know.",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::4",
+    "question": "What are the different types of bank charges mentioned?",
+    "reference": "The document details charges related to foreign exchange, bills, and other transactions, including Federal Excisable Duty, bank charges, and charges on foreign exchange.",
+    "candidate": "The different types of bank charges mentioned are:\n\n*   Imports\n*   Exports\n*   Foreign Currency Remittances (Outward / Inward)\n*   Other Charges on Foreign Exchange Transactions\n*   Remittances\n*   Bills\n*   Collection\n*   Inland Letter of Credit\n*   Purchase of Bills, Cheques etc.\n*   Documentary Bills drawn against Inland Letter of Credit\n*   Finances / Advances\n*   Project Finance\n*   Working Capital Loans / Advances / Auto Lease (other than Consumer Finance and Commercial Lending)\n*   Guarantees\n*   Miscellaneous Charges",
+    "score": 2,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::5",
+    "question": "What is the document's scope?",
+    "reference": "The document covers a wide range of banking charges, from import/export transactions to foreign currency remittances and other financial activities.",
+    "candidate": "The document’s scope covers various types of claims, including legal and other documentation charges, project finance, and claims related to hospital cash, C-section, and other specific situations.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::6",
+    "question": "What is the document's focus?",
+    "reference": "The document focuses on the charges associated with international banking transactions, particularly foreign exchange.",
+    "candidate": "The documents focus on claims and documentation for various financial products and services.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::7",
+    "question": "What is the purpose of the 'Schedule of Bank Charges'?",
+    "reference": "The schedule provides a comprehensive list of all charges associated with banking transactions, including Federal Excisable Duty, bank charges, and other charges.",
+    "candidate": "To provide a detailed breakdown of charges applied to bank accounts.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::8",
+    "question": "What is the significance of the 'Effective From' date?",
+    "reference": "The date is crucial for understanding the period during which these charges are in effect, which is a key element of the document's purpose.",
+    "candidate": "The context states that the schedule of bank charges is for the period from 01.07.2019 to 31.12.2019.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::9",
+    "question": "What are the different types of charges mentioned?",
+    "reference": "The document lists various charges, including Federal Excisable Duty, bank charges, and charges on foreign exchange.",
+    "candidate": "The context describes various types of bank charges, including:\n\n*   Imports\n*   Exports\n*   Foreign Currency Remittances (Outward / Inward)\n*   Other Charges on Foreign Exchange Transactions\n*   Remittances\n*   Bills\n*   Collection\n*   Inland Letter of Credit\n*   Purchase of Bills, Cheques etc.\n*   Documents / Advances\n*   Miscellaneous Charges\n*   Interest Charges\n*   Fees for Fresh, Enhancement, Reduction of Limits\n*   Interim Enhancement/Changes/One-off/Temporary Extensions\n*   Fees for Issuance of NOC\n*   Charges for Processing of Issuance of NOC on Request of Customers for Creating Additional/Pari-Passu Charge/Second Charge on their Fixed Assets\n*   Charges for Processing of Issuance of NOC on Request of Customers for Creating Charge on their Current Assets\n*   Charges for Vacation of Charge/Release of Charge",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "SCHEDULE OF BANK CHARGES FOR THE PERIOD FROM 01.07.2019 TO 31.12.2019 - English::qa::10",
+    "question": "What is the document's scope?",
+    "reference": "The document covers a wide range of banking charges, from import/export transactions to foreign currency remittances and other financial activities.",
+    "candidate": "The document’s scope covers various types of claims, including legal and other documentation charges, project finance, and claims related to hospital cash, C-section, and other specific situations.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::0",
+    "question": "How does active listening help in phone banking?",
+    "reference": "Active listening allows for a better understanding of customers' needs and shows a willingness to help, enabling the customer to talk without interruption and to reflect back their main question or concern.",
+    "candidate": "Active listening allows for a better understanding of customers’ needs and shows a willingness to help, enabling the customer to talk without interruption and reflect back their main question or concern.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::1",
+    "question": "What is the importance of speaking confidently during a call?",
+    "reference": "Speaking confidently, with a high or but not aggressive tone, is important to communicate that you understand them and are making an effort to help solve their problem.",
+    "candidate": "Speaking confidently during a call is important because it conveys a sense of assurance and helps build trust with the customer.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::2",
+    "question": "What should you do when a customer is calling from a registered number?",
+    "reference": "You should offer the solution and call transfer to the customer.",
+    "candidate": "Offer to help.",
+    "score": 3,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::3",
+    "question": "How does active listening contribute to customer satisfaction?",
+    "reference": "By using active listening techniques and asking relevant questions, you will communicate that you understand them and are making an effort to help solve their problem, resulting in a higher level of customer satisfaction.",
+    "candidate": "Active listening allows for a better understanding of the customer’s needs and shows a willingness to help, which leads to a more valuable and appreciated customer experience.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::4",
+    "question": "What is the role of asking the customer's name?",
+    "reference": "Asking the customer their name and pronouncing it correctly communicates respect for the customer and lets them know that they are important.",
+    "candidate": "Asking the customer their name is essential for effective communication. It allows for a better understanding of the customers’ needs and shows a willingness to help.",
+    "score": 5,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::5",
+    "question": "What does 'extra mile' mean in the context of customer service?",
+    "reference": "Extra mile means giving more than the minimum effort required. By taking the initiative to provide better service or give the customer something extra, customers will feel valued and appreciated.",
+    "candidate": "Demonstrate through actions that the customer is important by giving more than the minimum effort required.",
+    "score": 4,
+    "reason": ""
+}
+{
+    "qa_id": "Soft Skills::qa::6",
+    "question": "What is the importance of being proactive in customer service?",
+    "reference": "Being proactive will also help to reduce barriers when problem solving.",
+    "candidate": "Being proactive will also help to reduce barriers when problem solving.",
+    "score": 2,
+    "reason": ""
+}

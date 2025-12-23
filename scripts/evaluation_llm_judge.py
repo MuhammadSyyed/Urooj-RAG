@@ -5,15 +5,45 @@ from pathlib import Path
 from typing import Dict, List
 from llm_clients import client_from_env, safe_generate
 from dotenv import load_dotenv
+from text_utils import extract_json
 load_dotenv(override=True)
 import os
-JUDGE_PROMPT = """You are grading a model's answer.
-Question: {question}
-Reference answer: {reference}
-Model answer: {candidate}
+import re
 
-Score from 1 to 5 (5 = fully correct, 1 = incorrect). Be strict but fair.
-Return only JSON: {{"score": <int>, "reason": "<short explanation>"}}"""
+
+JUDGE_PROMPT = """You are evaluating a model's answer.
+
+Question:
+{question}
+
+Reference answer:
+{reference}
+
+Model answer:
+{candidate}
+
+Instructions:
+- Score from 1 to 5.
+- Use the full scale.
+- Partial correctness is allowed.
+- You may include brief analysis, but ensure a JSON object is present.
+
+Rubric:
+5 = Fully correct and complete
+4 = Mostly correct, minor omissions or imprecision
+3 = Partially correct, key ideas present but incomplete
+2 = Mostly incorrect, minimal relevant content
+1 = Incorrect or irrelevant
+
+Return your decision in JSON.
+If unsure, still assign the closest score.
+
+Preferred format:
+{{
+  "score": <integer 1-5>,
+  "reason": "<one or two short sentences>"
+}}
+"""
 
 def load_jsonl(path: Path) -> List[Dict]:
     items = []
@@ -27,16 +57,43 @@ def to_map(items: List[Dict], key: str) -> Dict[str, Dict]:
     return {item[key]: item for item in items if key in item}
 
 
-def judge_one(llm_model: str, provider: str, question: str, reference: str, candidate: str) -> Dict:
+def judge_one(
+    llm_model: str,
+    provider: str,
+    question: str,
+    reference: str,
+    candidate: str,
+) -> Dict:
     llm = client_from_env(model=llm_model, provider=provider)
-    prompt = JUDGE_PROMPT.format(question=question, reference=reference, candidate=candidate)
-    raw = safe_generate(llm, prompt, max_tokens=150, temperature=0.0)
+    prompt = JUDGE_PROMPT.format(
+        question=question,
+        reference=reference,
+        candidate=candidate,
+    )
+
+    raw = safe_generate(
+        llm,
+        prompt,
+        max_tokens=200,
+        temperature=0.2,  # allow slight flexibility
+    )
+
+    # Try strict JSON first
     try:
         parsed = json.loads(raw)
     except json.JSONDecodeError:
-        parsed = {"score": 1, "reason": f"Could not parse judge output: {raw}"}
+        # Fallback: extract score manually
+        score_match = re.search(r'([1-5])', raw)
+        parsed = {
+            "score": int(score_match.group(1)) if score_match else 1,
+            "reason": raw.strip()[:200],
+        }
+
     score = int(parsed.get("score", 1))
-    return {"score": max(1, min(score, 5)), "reason": parsed.get("reason", "")}
+    return {
+        "score": max(1, min(score, 5)),
+        "reason": parsed.get("reason", ""),
+    }
 
 
 def evaluate(qa_path: Path, pred_path: Path, out_path: Path, llm_model: str, provider: str) -> None:
@@ -65,9 +122,9 @@ def evaluate(qa_path: Path, pred_path: Path, out_path: Path, llm_model: str, pro
                 "reference": gt["answer"],
                 "candidate": pred.get("answer", ""),
                 "score": result["score"],
-                "reason": result["reason"],
+                "reason": extract_json(result["reason"]),
             }
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            f.write(json.dumps(record, indent=4,ensure_ascii=False) + "\n")
         if scores:
             avg = sum(scores) / len(scores)
             print(f"Evaluated {len(scores)} items. Average score: {avg:.2f}/5")

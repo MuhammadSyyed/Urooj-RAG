@@ -1,3 +1,7 @@
 __pycache__/
 agenticenv/
 *.pyc
+..venv/
+.venv/
+env/
+*.env
