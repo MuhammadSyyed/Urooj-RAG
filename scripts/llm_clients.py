@@ -84,7 +84,7 @@ class OllamaClient(LLMClient):
 
 def client_from_env(model: str, provider: Optional[str] = None) -> LLMClient:
     """Return an LLM client based on environment variables."""
-    selected = (provider or os.getenv("PROVIDER") or "openai").lower()
+    selected = (provider or os.getenv("PROVIDER") or "ollama").lower()
     if selected == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:

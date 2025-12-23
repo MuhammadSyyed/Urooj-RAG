@@ -12,14 +12,14 @@ Dependencies:
     (set OPENAI_API_KEY or run Ollama and set PROVIDER=ollama)
 """
 from __future__ import annotations
-
+from tqdm import tqdm
 import argparse
 import json
 from pathlib import Path
 from typing import Dict, List
 
 from llm_clients import client_from_env, safe_generate
-
+from text_utils import extract_json
 
 PROMPT_TEMPLATE = """You are given document content delimited by <doc>.
 Generate at least {num_q} diverse question-answer pairs that a user might ask.
@@ -47,7 +47,14 @@ def generate_qa_for_doc(doc: Dict, llm_model: str, provider: str, num_q: int) ->
     prompt = PROMPT_TEMPLATE.format(num_q=num_q, context=context[:6000])
     raw = safe_generate(llm, prompt, max_tokens=2000, temperature=0.2)
     try:
-        data = json.loads(raw)
+        clean = extract_json(raw)
+        if not clean:
+            raise ValueError(f"JSON extraction failed. Raw output:\n{raw}")
+        data = json.loads(extract_json(raw))
+        if not all(
+            isinstance(x, dict) and "question" in x and "answer" in x
+            for x in data):
+            raise ValueError("Malformed QA objects returned by LLM")
     except json.JSONDecodeError as exc:
         raise ValueError(f"LLM did not return JSON for doc {doc.get('doc_id')}: {raw}") from exc
     if not isinstance(data, list):
@@ -84,8 +91,12 @@ def build_dataset(
     docs = load_processed_docs(processed_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
-        for doc in docs:
-            qas = generate_qa_for_doc(doc, llm_model=llm_model, provider=provider, num_q=num_q)
+        for doc in tqdm(docs):
+            try:
+                qas = generate_qa_for_doc(doc, llm_model=llm_model, provider=provider, num_q=num_q)
+            except Exception as e:
+                print(f"Skipping {doc.get('doc_id')}: {e}")
+                continue
             for qa in qas:
                 f.write(json.dumps(qa, ensure_ascii=False) + "\n")
             print(f"Wrote {len(qas)} QAs for {doc.get('doc_id')}")
@@ -93,10 +104,10 @@ def build_dataset(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate QA dataset from processed docs.")
-    parser.add_argument("--processed", type=Path, default=Path("artifacts/processed_docs.jsonl"))
-    parser.add_argument("--out", type=Path, default=Path("artifacts/qa_dataset.jsonl"))
-    parser.add_argument("--model", type=str, default="gpt-4o-mini")
-    parser.add_argument("--provider", type=str, default="openai", choices=["openai", "ollama"])
+    parser.add_argument("--processed", type=Path, default=Path("../artifacts/processed_docs.jsonl"))
+    parser.add_argument("--out", type=Path, default=Path("../artifacts/qa_dataset.jsonl"))
+    parser.add_argument("--model", type=str, default="gemma3:1b")
+    parser.add_argument("--provider", type=str, default="ollama", choices=["openai", "ollama"])
     parser.add_argument("--num_questions", type=int, default=5)
     return parser.parse_args()
 

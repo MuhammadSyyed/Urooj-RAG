@@ -94,11 +94,11 @@ def evaluate(qa_path: Path, pred_path: Path, out_path: Path, llm_model: str, pro
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="LLM-as-a-judge evaluation.")
-    parser.add_argument("--qa", type=Path, default=Path("artifacts/qa_dataset.jsonl"))
-    parser.add_argument("--pred", type=Path, default=Path("artifacts/model_outputs.jsonl"))
-    parser.add_argument("--out", type=Path, default=Path("artifacts/eval_results.jsonl"))
-    parser.add_argument("--model", type=str, default="gpt-4o-mini")
-    parser.add_argument("--provider", type=str, default="openai", choices=["openai", "ollama"])
+    parser.add_argument("--qa", type=Path, default=Path("../artifacts/qa_dataset.jsonl"))
+    parser.add_argument("--pred", type=Path, default=Path("../artifacts/model_outputs.jsonl"))
+    parser.add_argument("--out", type=Path, default=Path("../artifacts/eval_results.jsonl"))
+    parser.add_argument("--model", type=str, default="gemma3:1b")
+    parser.add_argument("--provider", type=str, default="ollama", choices=["openai", "ollama"])
     return parser.parse_args()
 
 

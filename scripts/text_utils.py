@@ -4,6 +4,18 @@ from __future__ import annotations
 import re
 from typing import Iterable, List
 
+def extract_json(text: str) -> str:
+    if not text:
+        return ""
+    text = text.strip()
+    m = re.search(r"```(?:json)?\s*(.*?)\s*```", text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    m = re.search(r"($begin:math:display$\\s\*\{\.\*\}\\s\*$end:math:display$)", text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    return ""
+
 
 def clean_text(text: str) -> str:
     """Normalize whitespace and remove control characters."""

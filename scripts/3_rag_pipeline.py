@@ -41,7 +41,8 @@ def get_embedding_function(provider: str, model: str):
     if provider == "openai":
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
-            raise EnvironmentError("OPENAI_API_KEY required for OpenAI embeddings.")
+            raise EnvironmentError(
+                "OPENAI_API_KEY required for OpenAI embeddings.")
         base_url = os.getenv("OPENAI_BASE_URL")
         return embedding_functions.OpenAIEmbeddingFunction(
             api_key=api_key,
@@ -64,7 +65,8 @@ def ingest_into_chroma(
 ) -> None:
     client = chromadb.PersistentClient(path=str(persist_dir))
     emb_fn = get_embedding_function(embed_provider, embed_model)
-    collection = client.get_or_create_collection(name=collection_name, embedding_function=emb_fn)
+    collection = client.get_or_create_collection(
+        name=collection_name, embedding_function=emb_fn)
 
     docs = load_processed_docs(processed_path)
     ids: List[str] = []
@@ -116,7 +118,8 @@ def handle_ingest(args: argparse.Namespace) -> None:
 def handle_query(args: argparse.Namespace) -> None:
     client = chromadb.PersistentClient(path=str(args.persist_dir))
     emb_fn = get_embedding_function(args.embed_provider, args.embed_model)
-    collection = client.get_or_create_collection(name=args.collection, embedding_function=emb_fn)
+    collection = client.get_or_create_collection(
+        name=args.collection, embedding_function=emb_fn)
     hits = retrieve(collection, args.question, args.top_k)
     answer = generate_answer(
         query=args.question,
@@ -135,23 +138,30 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="RAG pipeline with ChromaDB.")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    ingest = sub.add_parser("ingest", help="Ingest processed docs into ChromaDB.")
-    ingest.add_argument("--processed", type=Path, default=Path("artifacts/processed_docs.jsonl"))
-    ingest.add_argument("--persist_dir", type=Path, default=Path("chroma_store"))
-    ingest.add_argument("--collection", type=str, default="urooj_docs")
-    ingest.add_argument("--embed_provider", type=str, default="sentence-transformers", choices=["openai", "ollama", "sentence-transformers"])
+    ingest = sub.add_parser(
+        "ingest", help="Ingest processed docs into ChromaDB.")
+    ingest.add_argument("--processed", type=Path,
+                        default=Path("../artifacts/processed_docs.jsonl"))
+    ingest.add_argument("--persist_dir", type=Path,
+                        default=Path("chroma_store"))
+    ingest.add_argument("--collection", type=str, default="data")
+    ingest.add_argument("--embed_provider", type=str, default="sentence-transformers",
+                        choices=["openai", "ollama", "sentence-transformers"])
     ingest.add_argument("--embed_model", type=str, default="all-MiniLM-L6-v2")
     ingest.set_defaults(func=handle_ingest)
 
     query = sub.add_parser("query", help="Query the RAG system.")
     query.add_argument("--question", type=str, required=True)
-    query.add_argument("--persist_dir", type=Path, default=Path("chroma_store"))
-    query.add_argument("--collection", type=str, default="urooj_docs")
+    query.add_argument("--persist_dir", type=Path,
+                       default=Path("chroma_store"))
+    query.add_argument("--collection", type=str, default="data")
     query.add_argument("--top_k", type=int, default=3)
-    query.add_argument("--provider", type=str, default="openai", choices=["openai", "ollama"])
-    query.add_argument("--model", type=str, default="gpt-4o-mini")
+    query.add_argument("--provider", type=str,
+                       default="ollama", choices=["openai", "ollama"])
+    query.add_argument("--model", type=str, default="gemma3:1b")
     query.add_argument("--temperature", type=float, default=0.1)
-    query.add_argument("--embed_provider", type=str, default="sentence-transformers", choices=["openai", "ollama", "sentence-transformers"])
+    query.add_argument("--embed_provider", type=str, default="sentence-transformers",
+                       choices=["openai", "ollama", "sentence-transformers"])
     query.add_argument("--embed_model", type=str, default="all-MiniLM-L6-v2")
     query.set_defaults(func=handle_query)
 
@@ -162,5 +172,3 @@ if __name__ == "__main__":
     parser = build_parser()
     args = parser.parse_args()
     args.func(args)
-
-
