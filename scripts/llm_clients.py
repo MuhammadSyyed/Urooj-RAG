@@ -1,4 +1,6 @@
 from __future__ import annotations
+from dotenv import load_dotenv
+load_dotenv(override=True)
 import os
 from dataclasses import dataclass
 from typing import Any, Dict, Optional

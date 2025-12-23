@@ -2,6 +2,9 @@ from pathlib import Path
 import json
 from rag_pipeline import retrieve, generate_answer, get_embedding_function
 import chromadb
+from dotenv import load_dotenv
+load_dotenv(override=True)
+import os
 
 qa_path = Path("../artifacts/qa_dataset.jsonl")
 out_path = Path("../artifacts/model_outputs.jsonl")
@@ -17,5 +20,5 @@ out_path.parent.mkdir(parents=True, exist_ok=True)
 with out_path.open("w", encoding="utf-8") as f:
     for item in qa_items:
         hits = retrieve(collection, item["question"], top_k=3)
-        ans = generate_answer(item["question"], hits, llm_model="gemma3:1b", provider="ollama", temperature=0.1)
+        ans = generate_answer(item["question"], hits, llm_model=os.getenv("model"), provider="ollama", temperature=0.1)
         f.write(json.dumps({"qa_id": item["qa_id"], "question": item["question"], "answer": ans}, ensure_ascii=False) + "\n")

@@ -1,6 +1,8 @@
 from __future__ import annotations
 import argparse
 import json
+from dotenv import load_dotenv
+load_dotenv(override=True)
 import os
 from pathlib import Path
 from typing import Dict, List
@@ -138,7 +140,7 @@ def build_parser() -> argparse.ArgumentParser:
     query.add_argument("--top_k", type=int, default=3)
     query.add_argument("--provider", type=str,
                        default="ollama", choices=["openai", "ollama"])
-    query.add_argument("--model", type=str, default="gemma3:1b")
+    query.add_argument("--model", type=str, default=os.getenv("model"))
     query.add_argument("--temperature", type=float, default=0.1)
     query.add_argument("--embed_provider", type=str, default="sentence-transformers",
                        choices=["openai", "ollama", "sentence-transformers"])

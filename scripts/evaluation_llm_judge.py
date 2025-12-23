@@ -4,7 +4,9 @@ import json
 from pathlib import Path
 from typing import Dict, List
 from llm_clients import client_from_env, safe_generate
-
+from dotenv import load_dotenv
+load_dotenv(override=True)
+import os
 JUDGE_PROMPT = """You are grading a model's answer.
 Question: {question}
 Reference answer: {reference}
@@ -78,7 +80,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--qa", type=Path, default=Path("../artifacts/qa_dataset.jsonl"))
     parser.add_argument("--pred", type=Path, default=Path("../artifacts/model_outputs.jsonl"))
     parser.add_argument("--out", type=Path, default=Path("../artifacts/eval_results.jsonl"))
-    parser.add_argument("--model", type=str, default="gemma3:1b")
+    parser.add_argument("--model", type=str, default=os.getenv("model"))
     parser.add_argument("--provider", type=str, default="ollama", choices=["openai", "ollama"])
     return parser.parse_args()
 

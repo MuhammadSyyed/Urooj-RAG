@@ -1,6 +1,8 @@
 from __future__ import annotations
 import argparse
 import json
+from dotenv import load_dotenv
+load_dotenv(override=True)
 import os
 from pathlib import Path
 from typing import Dict, List

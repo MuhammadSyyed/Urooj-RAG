@@ -1,23 +1,12 @@
-"""
-Generate Q&A pairs from processed documents using an LLM.
-
-Input: artifacts/processed_docs.jsonl (from data_preprocessing.py)
-Output: artifacts/qa_dataset.jsonl with at least 5 Q&A per document
-
-Run:
-    python qa_dataset_generator.py --model gpt-4o-mini
-
-Dependencies:
-    pip install openai requests
-    (set OPENAI_API_KEY or run Ollama and set PROVIDER=ollama)
-"""
 from __future__ import annotations
 from tqdm import tqdm
 import argparse
 import json
 from pathlib import Path
 from typing import Dict, List
-
+from dotenv import load_dotenv
+load_dotenv(override=True)
+import os
 from llm_clients import client_from_env, safe_generate
 from text_utils import extract_json
 
@@ -106,7 +95,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate QA dataset from processed docs.")
     parser.add_argument("--processed", type=Path, default=Path("../artifacts/processed_docs.jsonl"))
     parser.add_argument("--out", type=Path, default=Path("../artifacts/qa_dataset.jsonl"))
-    parser.add_argument("--model", type=str, default="gemma3:1b")
+    parser.add_argument("--model", type=str, default=os.getenv("model"))
     parser.add_argument("--provider", type=str, default="ollama", choices=["openai", "ollama"])
     parser.add_argument("--num_questions", type=int, default=5)
     return parser.parse_args()
