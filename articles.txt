@@ -1,0 +1,11 @@
+https://arxiv.org/abs/2405.20267
+https://arxiv.org/abs/2409.19019
+https://arxiv.org/abs/2405.17202
+https://arxiv.org/abs/2309.04369
+https://deepeval.com/docs/getting-started-rag
+https://www.ibm.com/think/insights/llm-evaluation
+https://blog.vectorize.io/these-5-techniques-will-supercharge-your-rag-pipelines-performance/
+https://www.superannotate.com/blog/llm-evaluation-guide
+https://www.turian.ai/blog/llm-evaluation
+https://www.braintrust.dev/articles/rag-evaluation-metrics
+
