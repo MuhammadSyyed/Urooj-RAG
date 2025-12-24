@@ -5,8 +5,9 @@ import chromadb
 from dotenv import load_dotenv
 load_dotenv(override=True)
 import os
+
 qa_path = Path("../artifacts/qa_dataset.jsonl")
-out_path = Path("../artifacts/deepseek_model_outputs.jsonl")
+out_path = Path("../artifacts/qwen_model_outputs.jsonl")
 
 client = chromadb.PersistentClient(path="chroma_store")
 emb_fn = get_embedding_function("sentence-transformers", "all-MiniLM-L6-v2")
