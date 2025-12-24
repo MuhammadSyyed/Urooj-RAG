@@ -124,7 +124,7 @@ def evaluate(qa_path: Path, pred_path: Path, out_path: Path, llm_model: str, pro
                 "score": result["score"],
                 "reason": extract_json(result["reason"]),
             }
-            f.write(json.dumps(record, indent=4,ensure_ascii=False) + "\n")
+            f.write(json.dumps(record,indent=4,ensure_ascii=False) + "\n")
         if scores:
             avg = sum(scores) / len(scores)
             print(f"Evaluated {len(scores)} items. Average score: {avg:.2f}/5")
