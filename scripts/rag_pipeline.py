@@ -4,11 +4,15 @@ import json
 from dotenv import load_dotenv
 load_dotenv(override=True)
 import os
+import sys
 from pathlib import Path
 from typing import Dict, List
 
 import chromadb
 from chromadb.utils import embedding_functions
+
+# Add current directory to path for local imports
+sys.path.insert(0, str(Path(__file__).parent))
 from llm_clients import client_from_env, safe_generate
 
 
