@@ -3,11 +3,13 @@
 ## Setup
 
 ### 1. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 2. Run the Flask server
+
 ```bash
 python app.py
 ```
@@ -17,9 +19,11 @@ The API will be available at `http://localhost:5000`
 ## API Endpoints
 
 ### GET /api/models
+
 Returns list of available models
 
 **Response:**
+
 ```json
 {
   "models": ["gemma3", "qwen", "phi3", "deepseek", "smollm"]
@@ -27,9 +31,11 @@ Returns list of available models
 ```
 
 ### POST /api/chat
+
 Process a user question and return an answer with sources
 
 **Request:**
+
 ```json
 {
   "question": "What is HBL?",
@@ -40,6 +46,7 @@ Process a user question and return an answer with sources
 ```
 
 **Response:**
+
 ```json
 {
   "answer": "HBL is Habib Bank Limited...",
@@ -50,9 +57,11 @@ Process a user question and return an answer with sources
 ```
 
 ### GET /api/settings
+
 Get default settings
 
 **Response:**
+
 ```json
 {
   "defaultModel": "gemma3",
@@ -63,9 +72,11 @@ Get default settings
 ```
 
 ### GET /api/health
+
 Health check endpoint
 
 **Response:**
+
 ```json
 {
   "status": "ok"
@@ -75,6 +86,7 @@ Health check endpoint
 ## Environment Variables
 
 Create a `.env` file if needed:
+
 ```
 FLASK_ENV=development
 FLASK_DEBUG=1
@@ -87,3 +99,24 @@ FLASK_DEBUG=1
 - **chromadb**: Vector database for document retrieval
 - **sentence-transformers**: Embedding models
 - **python-dotenv**: Environment variable management
+
+### Evaluation
+
+# Install optional dependencies first
+
+pip install rouge-score bert-score
+
+# Evaluate with all metrics (including LLM judge)
+
+python evaluation_multi_metric.py \
+ --qa ../artifacts/qa_dataset.jsonl \
+ --pred ../artifacts/gemma3_model_outputs.jsonl \
+ --out ../artifacts/gemma3_multi_eval.jsonl \
+ --model qwen:latest
+
+# Skip LLM judge for faster evaluation (F1, ROUGE, BERTScore only)
+
+python evaluation_multi_metric.py \
+ --pred ../artifacts/deepseek_model_outputs.jsonl \
+ --out ../artifacts/deepseek_multi_eval.jsonl \
+ --skip-llm-judge
