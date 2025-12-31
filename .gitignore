@@ -5,3 +5,8 @@ agenticenv/
 .venv/
 env/
 *.env
+.vscode/
+.idea/
+.DS_Store
+logs/
+*.log
